@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asal-Usul</title>
+    <script>
+        function playpause() {
+            let vid = document.querySelector("#video1");
+            if (vid.paused){
+                vid.play();
+            }
+            else {
+                vid.pause();
+            }
+        }
+    </script>
+</head>
+<style>
+    img {
+        width: 370px;
+        height: 220px;
+        border: 2px solid black;
+    }
+    
+    table {
+        width: 100%;
+
+    }
+    
+    p {
+        text-align: justify;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size:medium;
+    }
+
+    .tulis {
+        text-align: center;
+    }
+
+    header {
+        background-color: cadetblue;
+        padding: 1%;
+        margin-top: -2%;
+        
+    }
+</style>
+
+<body>
+    <header>
+            <h1 class=tulis id="asalusul">Asal-Usul Bitcoin</h1>
+    </header> <br>
+
+    <section>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h1>Pengertian Bitcoin</h1>
+                    <p>Bitcoin adalah mata uang digital yang dibuat dan disimpan secara elektronik. Sebagai mata uang
+                        digital, Bitcoin tidak memiliki wujud fisik seperti mata uang fiat. Tidak ada otoritas yang
+                        mengatur atau badan terpusat yang mengendalikannya. Merujuk pada buku Bitcoin From Beginner To
+                        Expert, Bitcoin terdesentralisasi sehingga tidak dikendalikan oleh satu entitas. Teknologi
+                        blockchain atau sistem jaringan digunakan untuk memverifikasi seluruh transaksi. Aktivitas
+                        tersebut dicatat pada public ledger atau buku besar publik yang transparan dan aman serta
+                        langsung dikenali.</p>
+                </td>
+                <td style="text-align: center;"><img src="./peng.jpg" alt="pengertian"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><img src="./sej.jpg" alt="sejarah"></td>
+                <td colspan="2">
+                    <h1>Sejarah Bitcoin</h1>
+                    <p>Berdasarkan buku The Bitcoin Genesis, sejarah Bitcoin berawal pada bulan November 2008. Seseorang
+                        dengan nama pengguna Satoshi Nakamoto merilis sebuah makalah ke milis kriptografi. Makalah ini
+                        terdiri dari sembilan halaman dan diberi judul “Bitcoin: A Peer-to-Peer Electronic Cash System”.
+                        Muncul kebingungan tentang pengertian Bitcoin dan bagaimana seharusnya digunakan. Setelah
+                        periode beta, program tersebut disempurnakan agar lebih mudah dipahami untuk digunakan. Pada
+                        tahun 2009, Bitcoin dirilis kepada komunitas internet dengan klaim dapat digunakan untuk
+                        membayar secara anonim. Berdasarkan buku Bitcoin, Blockchain, & Cryptocurrency: A Complete
+                        Guide, Satoshi mengirim Bitcoin kepada Hal Finney, sesama penggemar kriptografi. Transaksi
+                        tersebut sukses dan fenomena Bitcoin mulai dikenal masyarakat.
+                        Bitcoin belum memiliki nilai tukar hingga akhir tahun 2009. Sistem Bitcoin saat itu hanya berupa
+                        catatan transaksi di blockchain, sebuah forum daring di mana pengguna berkomunikasi dan mengatur
+                        transaksi dalam kode sumber terbuka.</p>
+                    </td>
+            </tr>
+        </table>
+    </section> <br>
+
+    <section>
+        <table>
+            <tr>
+                <td><video src="./videobtc.mp4" width="400" id="video1"></video></td>
+                <td><img src="./peng.jpg" alt="bt"></td>
+                <td><img src="./sej.jpg" alt="tc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="playpause();"><h3>Play/Pause Video</h3></button>
+                </td>
+                <td>
+                    <h3>Gambar 2</h3>
+                </td>
+                <td>
+                    <h3>Gambar 3</h3>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
