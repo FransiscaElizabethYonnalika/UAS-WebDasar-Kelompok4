@@ -1,0 +1,24 @@
+const api_url = 'https://api.coindesk.com/v1/bpi/currentprice.json'
+async function getdata(){
+  const response = await fetch(api_url);
+  const data = await response.json();  
+  const {time,disclaimer,chartName,USD,GBP,EUR} = data ;
+  document.getElementById('cht').textContent = data.chartName;
+  document.getElementById('dsc').textContent = data.disclaimer;
+  document.getElementById('tu').textContent = data.time.updated;
+  document.getElementById('tm').textContent = data.time.updatedISO;
+  document.getElementById('tk').textContent = data.time.updateduk;
+  document.getElementById('usd').textContent = data.bpi.USD.rate;
+  document.getElementById('descusd').textContent = data.bpi.USD.description;
+  document.getElementById('cdusd').textContent = data.bpi.USD.code;
+  document.getElementById('fltusd').textContent = data.bpi.USD.rate_float;
+  document.getElementById('gbp').textContent = data.bpi.GBP.rate;
+  document.getElementById('descgbp').textContent = data.bpi.GBP.description;
+  document.getElementById('cdgbp').textContent = data.bpi.GBP.code;
+  document.getElementById('fltgbp').textContent = data.bpi.GBP.rate_float;
+  document.getElementById('eur').textContent = data.bpi.EUR.rate;
+  document.getElementById('desceur').textContent = data.bpi.EUR.description;
+  document.getElementById('cdeur').textContent = data.bpi.EUR.code;
+  document.getElementById('flteur').textContent = data.bpi.EUR.rate_float;
+}
+getdata();
