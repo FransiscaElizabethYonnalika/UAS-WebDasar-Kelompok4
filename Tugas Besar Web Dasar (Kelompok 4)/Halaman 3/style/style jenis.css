@@ -25,7 +25,7 @@ body {
 }
 .sidebar header {
   font-size: 22px;
-  color: rgb(255, 217, 0);
+  color: rgb(242, 169, 0);
   line-height: 70px;
   text-align: center;
   background: rgb(0, 0, 0);
@@ -49,7 +49,7 @@ body {
 }
 ul li:hover a{
   padding-left: 50px;
-  color: rgb(255, 38, 0);
+  color: rgb(251, 140, 1);
 }
 .sidebar ul a i{
   margin-right: 16px;
@@ -79,7 +79,7 @@ label #cancel{
   left: 195px;
   top: 17px;
   font-size: 30px;
-  color: rgb(255, 217, 0);
+  color: rgb(242, 169, 0);
   padding: 4px 9px;
   transition: all .5s ease;
 }
@@ -111,61 +111,61 @@ section{
 }
 
 button:hover{
-    background-color:lightsalmon;
-    color: white;
+    background-color: rgb(77, 77, 78);
+    color: rgb(242, 169, 0);
     cursor: pointer;
     transition: 0.3s;
   }
 
 h1{
     font-family: 'Outfit', sans-serif; 
-    color:rgb(0, 0, 0);
+    color: rgb(242, 169, 0);
 }
 
 p {
     text-align: justify;
     font-family: 'Titillium Web', sans-serif;
     font-size:18px;
-    color:rgb(255, 217, 0);
+    color: rgb(242, 169, 0);
 }
 
 #left, #right{
-    border:blanchedalmond 1px solid;
-    background-color: blanchedalmond;
-    padding: 5% 3%;
-    border-radius: 3%;
-    text-align: center;
-    height: 250px;
-    margin-top: 10%;
+  border:rgb(77, 77, 78) 1px solid;
+  background-color: rgb(77, 77, 78);
+  padding: 5% 3%;
+  border-radius: 3%;
+  text-align: center;
+  height: 450px;
+  margin-top: 10%;
 }
 #left{
-    margin-left: 15%;
-    float: left;
+  margin-left: 15%;
+  float: left;
 }
 #slide, #slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9, #slide10, #slide11{
-    display: none;
-    margin-top: 28px;
+  display: none;
+  margin-top: 30px;
 }
 .img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
 }
 .btc.bnb{
-    font-size: 30px;
+  font-size: 30px;
 }
 #right{
-    margin-right: 15%;
-    float: right;
+  margin-right: 15%;
+  float: right;
 }
 button{
-    background-color: rgb(255, 217, 0);
-    width: 300px;
-    height: 30px;
-    border: solid 2px rgb(255, 217, 0);
-    border-radius: 5px;
+ background-color: rgb(242, 169, 0);
+  width: 300px;
+  height: 30px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
 }
 /*ABOUT*/
 #tulisan{

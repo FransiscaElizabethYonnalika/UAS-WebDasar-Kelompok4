@@ -25,7 +25,7 @@ body {
 }
 .sidebar header {
   font-size: 22px;
-  color: rgb(255, 217, 0);
+  color: rgb(242, 169, 0);
   line-height: 70px;
   text-align: center;
   background: rgb(0, 0, 0);
@@ -49,7 +49,7 @@ body {
 }
 ul li:hover a{
   padding-left: 50px;
-  color: rgb(255, 38, 0);
+  color: rgb(251, 140, 1);
 }
 .sidebar ul a i{
   margin-right: 16px;
@@ -79,7 +79,7 @@ label #cancel{
   left: 195px;
   top: 17px;
   font-size: 30px;
-  color: rgb(255, 217, 0);
+  color: rgb(242, 169, 0);
   padding: 4px 9px;
   transition: all .5s ease;
 }
@@ -127,7 +127,7 @@ p {
     text-align: justify;
     font-family: 'Titillium Web', sans-serif;
     font-size:18px;
-    color:rgb(255, 217, 0);
+    color: rgb(242, 169, 0);
 }
 
 .tulis {

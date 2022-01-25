@@ -1,0 +1,29 @@
+ //nama, market, tahun, penemu , harga, kurs ke USD, kurs ke GBP, kurs ke EUR
+            //urutan ngikutin array forPilih
+            const myArray = [ {"market":"REPv2/IDR","tahun":"2014","penemu":"Jack Peterson, Joey Krug, dan Jeremy Gardner","harga":"Rp 174,092","USD":"$12","GBP":"£9","EUR":"€11"},
+                {"market":"BTC","tahun":"2014","penemu":" Satoshi Nakamoto","harga":"Rp 494,655,912","USD":"$34,435.40","GBP":"£25,600.83","EUR":"€30,433.83"},
+                {"market":"BNB","tahun":"2017","penemu":"Changpeng Zhao","harga":"Rp 5,035,467","USD":"$350.07","GBP":"£260.26","EUR":"€309.39"},
+                {"market":"LINK","tahun":"2014","penemu":"Sergey Nazarov","harga":"Rp 206,189","USD":"$16.19","GBP":"£11.90","EUR":"€14.32"},
+                {"market":"DASH","tahun":"2014","penemu":"Evan Duffield","harga":"Rp 1,193,019","USD":"$83.03","GBP":"£61.80","EUR":"€73.39"},
+                {"market":"DECRED","tahun":"2016","penemu":"Jake Yacom-Piatt,Alex Yacom-Piatt,Dave Collins,David Hill,John Vernaleo, dan Josh Rickmar","harga":"Rp 747,277.45","USD":"$52.01","GBP":"£38.69","EUR":"€46.02"},
+                {"market":"ETH","tahun":"2013","penemu":"Vitalik Buterin","harga":"Rp 32,601,785","USD":"$2,270","GBP":"£1,686","EUR":"€2,006"},
+                {"market":"GNO","tahun":"2015","penemu":"Martin Koeppelmann dan Stefan George","harga":"Rp 3,610,969.58","USD":"$275,29","GBP":"£177.54","EUR":"€217.99"},
+                {"market":"LTC","tahun":"2011","penemu":"Charlie Lee","harga":"Rp1,485,258","USD":"$103.44","GBP":"£76.83","EUR":"€91.47"},
+                {"market":"XMR","tahun":"2013","penemu":"Nicholas Van Sabarhagen","harga":"Rp 2,039,398","USD":"$142.02","GBP":"£104.95","EUR":"€125.26"},
+                {"market":"NEO","tahun":"2014","penemu":"Platform Blockchain Opensource","harga":"Rp 245,015","USD":"$17.07","GBP":"£12.68","EUR":"€15.09"},
+                {"market":"WAVES","tahun":"2016","penemu":"Sasha Ivanov","harga":"Rp 114,652.78","USD":"$7.99","GBP":"£5.94","EUR":"€7.06"}];
+const forPilih = ["Ardor","Bitcoin Cash","Binance Coin","Chain Link","Dash","Decred","Ethereum Classic","Gnosis","Lite Coin","Monero","Neo","Waves"];
+
+function myFunction(){
+   let x = document.getElementById("choose").value;
+   if(x>=0){
+       document.getElementById("pilih").innerHTML = forPilih[x];
+       document.getElementById("market").innerHTML = myArray[x].market;
+       document.getElementById("tahun").innerHTML = myArray[x].tahun;
+       document.getElementById("penemu").innerHTML = myArray[x].penemu;
+       document.getElementById("harga").innerHTML = myArray[x].harga;
+       document.getElementById("USD").innerHTML = myArray[x].USD;
+       document.getElementById("GBP").innerHTML = myArray[x].GBP;
+       document.getElementById("EUR").innerHTML = myArray[x].EUR;
+   }
+}
